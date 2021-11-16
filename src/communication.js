@@ -10,6 +10,7 @@ const tagActions = Object.freeze({
 
 const Communication = (host, username, password) => {
   let requestCookie = null
+  const hostUrl = host.startsWith('http') ? host : `http://${host}`
 
   const _parseValue = (tagName, sourceValue) => {
     const { props } = tags[tagName] || {}
@@ -117,7 +118,7 @@ const Communication = (host, username, password) => {
 
   const login = async () => {
     const url = generateUrl(
-      host,
+      hostUrl,
       '/cgi/login',
       { username: username, password: password }
     )
@@ -152,7 +153,7 @@ const Communication = (host, username, password) => {
     const queryParams = _buildQueryParams(tags)
 
     const url = generateUrl(
-      host,
+      hostUrl,
       `/cgi/${action}`,
       queryParams
     )

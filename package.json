@@ -1,6 +1,6 @@
 {
   "name": "orca-heat-pump-communication",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Read/Write communication with Orca Heat Pumps",
   "main": "src/index.js",
   "scripts": {
