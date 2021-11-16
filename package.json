@@ -1,0 +1,31 @@
+{
+  "name": "orca-heat-pump-communication",
+  "version": "0.0.1",
+  "description": "Read/Write communication with Orca Heat Pumps",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "standard --verbose",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --collect-coverage"
+  },
+  "keywords": [
+    "orca",
+    "heatpump",
+    "heat",
+    "pump"
+  ],
+  "author": {
+    "name": "Miran Setinc - Lino",
+    "url": "https://github.com/medolino"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.6"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "nock": "^13.1.1",
+    "standard": "^16.0.4"
+  }
+}
